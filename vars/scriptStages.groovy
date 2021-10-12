@@ -13,12 +13,12 @@ def call() {
             }
             stage('Upload File to S3') {                  
                 steps {
-                    uploadFileS3(awsRegion:"us-east-1", s3Bucket:"testbucket-darren")
+                    uploadFileS3(s3Bucket:"testbucket-darren")
                 }
             }
             stage('Delete HelloWorld.txt from S3 bucket') {                  
                 steps {
-                    deleteFileS3(awsRegion: "us-east-1", s3Bucket: "testbucket-darren", pathName: "HelloWorld.txt")
+                    deleteFileS3(s3Bucket: "testbucket-darren", pathName: "HelloWorld.txt")
                 }
             }
             stage('Deploy EC2') {                  
