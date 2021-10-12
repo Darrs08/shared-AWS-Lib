@@ -2,7 +2,7 @@ def call(Map stageParams = [awsRegion: "us-east-1", s3Bucket: "testbucket-darren
     withAWS(region: stageParams.awsRegion, credentials:"${AWS_CRED}") {       
         s3Upload( 
             bucket: stageParams.s3Bucket,
-            path: "CertainFileSample.txt"                       
+            file: "CertainFileSample.txt"                       
         )
     }
 }
