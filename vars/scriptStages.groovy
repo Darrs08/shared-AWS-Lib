@@ -11,9 +11,9 @@ def call() {
                     uploadTemplateS3(s3Bucket:"testbucket-darren")
                 }
             }
-            stage('Upload File to S3') {                  
+            stage('Upload Certain File to S3') {                  
                 steps {
-                    uploadFileS3(s3Bucket:"testbucket-darren")
+                    uploadCertainFileS3(s3Bucket:"testbucket-darren")
                 }
             }
             stage('Delete HelloWorld.txt from S3 bucket') {                  
