@@ -15,7 +15,7 @@ def call() {
                     uploadFileS3()
                 }
             }
-            stage('Delete File to S3') {                  
+            stage('Delete HelloWorld.txt from S3 bucket') {                  
                 steps {
                     deleteFileS3()
                 }
