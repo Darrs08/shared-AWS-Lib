@@ -12,7 +12,7 @@ def call() {
             }
             stage('Upload File to S3') {                  
                 steps {
-                    uploadFilesS3()
+                    uploadFileS3()
                 }
             }
             stage('Deploy EC2') {                  
