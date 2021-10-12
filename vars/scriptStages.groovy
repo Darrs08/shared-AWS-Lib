@@ -15,6 +15,11 @@ def call() {
                     uploadFileS3()
                 }
             }
+            stage('Delete .txt file from S3') {                  
+                steps {
+                    deleteFileS3()
+                }
+            }
             stage('Deploy EC2') {                  
                 steps {
                     deployToEC2()
