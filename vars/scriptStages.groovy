@@ -12,7 +12,7 @@ def call() {
             }
             stage('Upload File to S3') {                  
                 steps {
-                    uploadFileS3()
+                    uploadFileS3(awsRegion:"us-east-1", s3Bucket:"testbucket-darren")
                 }
             }
             stage('Delete HelloWorld.txt from S3 bucket') {                  
