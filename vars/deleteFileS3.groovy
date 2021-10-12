@@ -6,4 +6,4 @@ def call(Map stageParams = [:]) {
         )
     }
 }
-//awsRegion: "us-east-1", s3Bucket: "testbucket-darren" "HelloWorld.txt"
+//awsRegion: "us-east-1", s3Bucket: "testbucket-darren", pathName: "HelloWorld.txt"
