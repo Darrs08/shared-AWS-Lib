@@ -1,9 +1,9 @@
 def call(Map stageParams = [:]) {
-    withAWS(region: ${stageParams.awsRegion}, credentials:"${AWS_CRED}") {
+    withAWS(region: "${stageParams.awsRegion}", credentials:"${AWS_CRED}") {
         awsIdentity()
         s3Upload( 
             includePathPattern: "*.yml",
-            bucket: ${stageParams.s3Bucket}
+            bucket: "${stageParams.s3Bucket}"
         )
     }
 }
