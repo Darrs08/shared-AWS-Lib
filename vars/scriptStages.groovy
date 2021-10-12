@@ -15,7 +15,7 @@ def call() {
                     uploadFileS3()
                 }
             }
-            stage('Upload File to S3') {                  
+            stage('Delete File to S3') {                  
                 steps {
                     deleteFileS3()
                 }
