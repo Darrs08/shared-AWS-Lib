@@ -17,7 +17,7 @@ def call() {
             }
             stage('Delete HelloWorld.txt from S3 bucket') {                  
                 steps {
-                    deleteFileS3()
+                    deleteFileS3(awsRegion: "us-east-1", s3Bucket: "testbucket-darren", pathName: "HelloWorld.txt")
                 }
             }
             stage('Deploy EC2') {                  
