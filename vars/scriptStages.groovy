@@ -7,7 +7,7 @@ def call() {
         stages {
             stage('Upload template to S3') {                  
                 steps {
-                    uploadTemplateS3(awsRegion:"us-east-1", bucket:"testbucket-darren")
+                    uploadTemplateS3(awsRegion:"us-east-1", s3Bucket:"testbucket-darren")
                 }
             }
             stage('Upload File to S3') {                  
