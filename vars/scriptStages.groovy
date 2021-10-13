@@ -16,6 +16,11 @@ def call() {
                     createBucket()
                 }
             }
+            stage('Create DynamoDB') {                  
+                steps {
+                    createDynamo()
+                }
+            }
             stage('Upload Files to S3') {                  
                 steps {
                     uploadAllFileS3(s3Bucket:"sample-bucket-darren")
