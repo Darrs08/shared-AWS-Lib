@@ -8,7 +8,7 @@ def call() {
         stages {
             stage('create bucket') {                  
                 steps { 
-                  createBucket()                    
+                   uploadAllFileS3(s3Bucket: "filesdarren")
                 }
             }            
         }
