@@ -8,7 +8,9 @@ def call() {
         stages {
             stage('Upload template to S3') {                  
                 steps {
-                    createBucket.groovy()
+                    script {
+                        createBucket.groovy()
+                    }
                 }
             }            
         }
