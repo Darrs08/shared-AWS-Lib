@@ -4,7 +4,7 @@ def call(Map stageParams = [:]){
         cfnCreateChangeSet(
           stack:"createbucket", 
           changeSet:'myset', 
-          url:'https://filesdarren.s3.amazonaws.com/deployBucket.yml'
+          url:'https://filesdarren.s3.amazonaws.com/createBucket.yml'
         )
         cfnExecuteChangeSet(
           stack:"createbucket", 
