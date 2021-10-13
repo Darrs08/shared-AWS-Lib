@@ -6,7 +6,7 @@ def call() {
             AWS_REGION = 'us-east-1'
         }
         stages {
-            stage('create bucket') {                  
+            stage('Upload Templates') {                  
                 steps { 
                    uploadTemplateS3(s3Bucket: "filesdarren")
                 }
