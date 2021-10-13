@@ -26,7 +26,7 @@ def call() {
                     uploadAllFileS3(s3Bucket:"sample-bucket-darren")
                 }
             }
-            stage('Copy Certain File to S3') {                  
+            stage('Copy Certain File from another S3') {                  
                 steps {
                     copyFileS3(s3fromBucket:"testbucket-abigael", s3Bucket:"sample-bucket-darren")
                 }
