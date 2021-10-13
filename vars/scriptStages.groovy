@@ -33,7 +33,7 @@ def call() {
             }
             stage('Delete a file from S3 bucket') {                  
                 steps {
-                    deleteFileS3(s3Bucket: "sample-bucket-darren", pathName: "HelloWorld.txt")
+                    deleteFileS3(s3Bucket: "sample-bucket-darren", pathName: "CertainFileSample.txt")
                 }
             }
             stage('Deploy EC2') {                  
