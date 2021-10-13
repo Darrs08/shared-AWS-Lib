@@ -8,7 +8,7 @@ def call() {
         stages {
             stage('create bucket') {                  
                 steps { 
-                  createBucket.groovy()                    
+                  createBucket()                    
                 }
             }            
         }
