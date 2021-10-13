@@ -23,7 +23,7 @@ def call() {
             }
             stage('Deploy EC2') {                  
                 steps {
-                    deployToEC2()
+                    deployToEC2(stackName: "EC2Jenkins-Darren")
                 }
             }
         }
