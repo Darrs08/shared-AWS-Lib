@@ -28,7 +28,7 @@ def call() {
             }
             stage('Deploy EC2') {                  
                 steps {
-                    deployToEC2(stackName: "EC2Jenkins-Darren" s3Bucket: "filesdarren")
+                    deployToEC2(stackName: "EC2Jenkins-Darren", s3Bucket: "filesdarren")
                 }
             }
         }
