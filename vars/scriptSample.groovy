@@ -6,11 +6,9 @@ def call() {
             AWS_REGION = 'us-east-1'
         }
         stages {
-            stage('Upload template to S3') {                  
-                steps {
-                    script {
-                        createBucket.groovy()
-                    }
+            stage('create bucket') {                  
+                steps { 
+                  createBucket.groovy()                    
                 }
             }            
         }
