@@ -4,7 +4,7 @@ def call(Map stageParams = [:]) {
             fromBucket: stageParams.s3fromBucket,
             toBucket: stageParams.s3Bucket,
             fromPath: "src/HelloAbby.txt",
-            toPath: 'HelloAbby.txt'
+            toPath: 'copiedFile/HelloAbby.txt'
         )
     }
 }
