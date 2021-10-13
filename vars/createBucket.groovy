@@ -3,12 +3,12 @@ def call(Map stageParams = [:]){
         awsIdentity()
         cfnCreateChangeSet(
           stack:"createbucket", 
-          changeSet:'my-change-set', 
+          changeSet:'myset', 
           url:'https://github.com/Darrs08/JenkinsAWS-demo/blob/main/deployBucket.yml'
         )
         cfnExecuteChangeSet(
           stack:"createbucket", 
-          changeSet:'my-change-set'
+          changeSet:'myset'
         )
   }
 }
